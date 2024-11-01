@@ -142,7 +142,7 @@ const App = () => {
               </h1>
 
               <h2 className="text-[min(8.4vh,5.04vw)] xs:text-[min(7vh,4.2vw)] !leading-[1.05]">
-                Build, Upgrade, and Earn HASH!
+                Build Upgrade Earn
               </h2>
             </div>
 
@@ -157,21 +157,23 @@ const App = () => {
               ))}
             </ul>
 
-            <div className="absolute bottom-0 right-0 flex flex-col items-end translate-y-[-1vh]">
+            <div className="absolute bottom-0 right-0 flex flex-col items-end translate-y-[-1vh] mt-[4rem]">
               <h3 className="text-[min(20vh,12vw)] leading-[0.75]">#HASH</h3>
               <p className="text-[min(3vh,1.8vw)] md:text-[min(2.8vh,1.68vw)] leading-[0.75] mr-[1.2em]">
                 {"What to expect --> Coming Soon!"}
               </p>
+              
               <ul>
-              {hashFeatures.map((feature, i) => (
-                <li
-                  key={i}
-                  className="font-varela text-sm xs:text-base md:text-lg opacity-50 underline !leading-[1.9]"
-                >
-                  {feature}
-                </li>
-              ))}
-            </ul>
+                {hashFeatures.map((feature, i) => (
+                  <li
+                    key={i}
+                    className="font-varela text-sm xs:text-base md:text-lg opacity-50 underline !leading-[1.9]"
+                  >
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              
             </div>
           </div>
         </div>
