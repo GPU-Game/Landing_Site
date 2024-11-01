@@ -3,15 +3,22 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import React, { useEffect, useRef, useState } from "react";
 
-const features = [
+const gpuFeatures = [
   "GPUs (NFTs): 50,000",
-  "Dev Fee: 0%",
   "Build (mint) Price: 0.02 ETH",
-  "Upgrade Price: 50k HASH",
-  "Network: Base",
+  "(Same) Whitelist: 50% off first GPU",
   "Mint Asset: wETH",
-  "Upgrade Asset: HASH",
-  "No Whitelist",
+  "Network: Base",
+  "Earn: HASH tokens",
+];
+
+const hashFeatures = [
+  "Total Supply: 100 Billion",
+  "ILO Pool HASH: 1 Billion",
+  "ILO Pool wETH: 0.5",
+  "(Same) Whitelist: ~2,000",
+  "Paired Asset: wETH",
+  "Network: Base",
 ];
 
 const App = () => {
@@ -135,12 +142,12 @@ const App = () => {
               </h1>
 
               <h2 className="text-[min(8.4vh,5.04vw)] xs:text-[min(7vh,4.2vw)] !leading-[1.05]">
-                Build, Upgrade, and start mining!
+                Build, Upgrade, and Earn HASH!
               </h2>
             </div>
 
             <ul>
-              {features.map((feature, i) => (
+              {gpuFeatures.map((feature, i) => (
                 <li
                   key={i}
                   className="font-varela text-sm xs:text-base md:text-lg opacity-50 underline !leading-[1.9]"
@@ -155,6 +162,16 @@ const App = () => {
               <p className="text-[min(3vh,1.8vw)] md:text-[min(2.8vh,1.68vw)] leading-[0.75] mr-[1.2em]">
                 {"What to expect --> Coming Soon!"}
               </p>
+              <ul>
+              {hashFeatures.map((feature, i) => (
+                <li
+                  key={i}
+                  className="font-varela text-sm xs:text-base md:text-lg opacity-50 underline !leading-[1.9]"
+                >
+                  {feature}
+                </li>
+              ))}
+            </ul>
             </div>
           </div>
         </div>
