@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from "react";
 const gpuFeatures = [
   "GPUs (NFTs): 50,000",
   "Build (mint) Price: 0.02 ETH",
-  "(Same) Whitelist: 50% off first GPU",
+  "Whitelist (Same): 50% off first GPU",
   "Mint Asset: wETH",
   "Network: Base",
   "Earn: HASH tokens",
@@ -14,9 +14,10 @@ const gpuFeatures = [
 
 const hashFeatures = [
   "Total Supply: 100 Billion",
+  "Start Price: $0.00000125",
   "ILO Pool HASH: 1 Billion",
   "ILO Pool wETH: 0.5",
-  "(Same) Whitelist: ~2,000",
+  "Whitelist (Same): ~2,000 slots",
   "Paired Asset: wETH",
   "Network: Base",
 ];
@@ -160,10 +161,10 @@ const App = () => {
             <div className="absolute bottom-0 right-0 flex flex-col items-end translate-y-[-1vh] mt-[4rem]">
               <h3 className="text-[min(20vh,12vw)] leading-[0.75]">#HASH</h3>
               <p className="text-[min(3vh,1.8vw)] md:text-[min(2.8vh,1.68vw)] leading-[0.75] mr-[1.2em]">
-                {"What to expect --> Coming Soon!"}
+                {"What to expect!"}
               </p>
               
-              <ul>
+              <ul className="mt-[2.0em]">
                 {hashFeatures.map((feature, i) => (
                   <li
                     key={i}
