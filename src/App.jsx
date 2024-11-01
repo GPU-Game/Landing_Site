@@ -160,11 +160,11 @@ const App = () => {
 
             <div className="absolute bottom-0 right-0 flex flex-col items-end translate-y-[-1vh] mt-[4rem]">
               <h3 className="text-[min(20vh,12vw)] leading-[0.75]">#HASH</h3>
-              <p className="text-[min(3vh,1.8vw)] md:text-[min(2.8vh,1.68vw)] leading-[0.75] mr-[1.2em]">
+              <p className="text-[min(3vh,1.8vw)] md:text-[min(2.8vh,1.68vw)] leading-[0.75] mr-[1.2rem]">
                 {"What to expect!"}
               </p>
               
-              <ul className="mt-[2.0em]">
+              <ul className="mt-[2.0rem]">
                 {hashFeatures.map((feature, i) => (
                   <li
                     key={i}
