@@ -158,10 +158,10 @@ const App = () => {
               ))}
             </ul>
 
-            <div className="absolute -bottom-6 right-0 flex flex-col items-end translate-y-[-1vh]">
+            <div className="absolute top-14 right-0 flex flex-col items-end translate-y-[-1vh]">
               <h3 className="text-[min(20vh,12vw)] leading-[0.75]">#HASH</h3>
               
-              <ul className="mt-[50px]">
+              <ul className="mt-[10px]">
                 {hashFeatures.map((feature, i) => (
                   <li
                     key={i}
