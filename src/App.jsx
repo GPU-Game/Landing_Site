@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const gpuFeatures = [
   "GPUs (NFTs): 50,000",
-  "Build (mint) Price: 0.02 ETH",
+  "Build (mint) Price: 0.02 wETH",
   "Whitelist (Same): 50% off first GPU",
   "Mint Asset: wETH",
   "Network: Base",
