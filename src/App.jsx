@@ -7,9 +7,9 @@ const gpuFeatures = [
   "GPUs (NFTs): 50,000",
   "Build (mint) Price: 0.02 wETH",
   "Whitelist (Same): 50% off first GPU",
+  "Mining Emissions: HASH tokens",
   "Mint Asset: wETH",
   "Network: Base",
-  "Earn: HASH tokens",
 ];
 
 const hashFeatures = [
