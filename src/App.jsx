@@ -130,12 +130,12 @@ const App = () => {
         <div
           ref={contentWrapper}
           style={{ opacity: 0 }}
-          className="absolute inset-0 bg-black flex items-center justify-center"
+          className="absolute inset-0 bg-black flex justify-center"
         >
           <div
             ref={content}
             style={{ opacity: 0 }}
-            className="flex flex-col w-[90%] gap-8 xs:gap-10 md:gap-12 relative"
+            className="flex-col w-[90%] gap-8 xs:gap-10 md:gap-12 relative"
           >
             <div>
               <h1 className="text-[min(24vh,14.4vw)] xs:text-[min(20vh,12vw)] !leading-[1.05]">
@@ -158,7 +158,7 @@ const App = () => {
               ))}
             </ul>
 
-            <div className="absolute -bottom-3 right-0 flex flex-col items-end translate-y-[-1vh] mt-[300px]">
+            <div className="absolute -bottom-6 right-0 flex flex-col items-end translate-y-[-1vh]">
               <h3 className="text-[min(20vh,12vw)] leading-[0.75]">#HASH</h3>
               
               <ul className="mt-[50px]">
